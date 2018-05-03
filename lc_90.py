@@ -2,14 +2,16 @@
 # -*-coding: utf-8 -*-
 
 
-def subsets(nums):
+def subsetsWithDup(nums):
     """
     :type nums: List[int]
     :rtype: List[List[int]]
     """
     def combination(nums, r, count, res):
         if count == 0:
-            res.append(r[:])
+            temp_r = sorted(r[:])
+            if temp_r not in res:
+                res.append(temp_r)
             return
         else:
             i = 0
@@ -27,5 +29,5 @@ def subsets(nums):
         combination(nums, [], i, res)
     return res
 
-print(subsets([1, 2, 3]))
+print(subsetsWithDup([1, 2, 2]))
 
