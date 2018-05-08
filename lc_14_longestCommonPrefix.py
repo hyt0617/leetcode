@@ -2,7 +2,7 @@
 # -*-coding: utf-8 -*-
 
 
-def longestCommonPrefix(self, strs):
+def longestCommonPrefix(strs):
     """
     :type strs: List[str]
     :rtype: str
