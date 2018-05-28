@@ -14,6 +14,7 @@ def maxProfit(prices):
         r2 = max(r2, h2+i)
     return r2
 
+print(maxProfit([2,4,1]))
 print(maxProfit([1,2,4,2,5,7,2,4,9,0]))
 print(maxProfit([0,0,3,1,4]))
 print(maxProfit([3,3,5,0,0,3,1,4]))
